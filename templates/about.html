@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entel - Internet de Fibra Óptica</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Inicio</a></li>
+                <li><a href="{{ url_for('about') }}">Quiénes Somos</a></li>
+                <li><a href="{{ url_for('services') }}">Servicios</a></li>
+                <li><a href="{{ url_for('news') }}">Noticias</a></li>
+                <li><a href="{{ url_for('contact') }}">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Quiénes Somos</h2>
+<p>Entel es una empresa líder en telecomunicaciones en Bolivia. Ofrecemos servicios de internet de alta velocidad a través de fibra óptica, garantizando una conexión confiable y rápida.</p>
+
+<h3>Misión</h3>
+<p>Brindar a nuestros clientes el mejor servicio de internet con la última tecnología.</p>
+
+<h3>Visión</h3>
+<p>Ser la empresa líder en tecnología e innovación en servicios de internet en Bolivia.</p>
+
+<h3>Nuestro Equipo</h3>
+<p>Conoce a nuestro equipo de profesionales altamente capacitados.</p>
+<img src="{{ url_for('static', filename='images/trabajo.jpg') }}" alt="Equipo de trabajo" class="centered-small">
+
+    </main>
+
+    <footer>
+        <p> © 2020 Empresa Nacional de Telecomunicaciones S.A. <br>
+            C. Federico Zuazo N° 1771 - Tel: +591 (2) 2141010 - NIT 1020703023 - La Paz, Bolivia</p>
+        <div class="social">
+            <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>
